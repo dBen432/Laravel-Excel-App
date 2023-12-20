@@ -7,7 +7,7 @@ Route::get('/', function () {
     return view('welcome');
 });
  
-Route::get('list', [EmployeeController::class, 'index']);
+Route::get('/', [EmployeeController::class, 'index']);
 Route::get('export', [EmployeeController::class, 'export']);
 
 Route::post('store', [EmployeeController::class, 'store']);
